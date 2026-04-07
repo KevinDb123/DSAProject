@@ -4,7 +4,7 @@
 
 本实验使用树结构表示组织关系：`学部 -> 学院 -> 系 -> 老师`。
 
-**省流：完成RelationTree.cpp里的TODO然后参考五、编译与运行进行编译运行**
+**省流：完成RelationTree.cpp里的TODO然后参考 五、编译与运行 进行编译运行**
 
 
 ## 二、当前代码约定
@@ -79,13 +79,13 @@ g++ -std=c++11 -Wall -Wextra -finput-charset=UTF-8 -fexec-charset=GBK -o main.ex
 
 
 1. 打印树（已实现，不需要完成）
-<img src="../img/lab2/1.png" alt="打印树效果" width="720" />
+<img src="../img/lab2/1.png" alt="打印树效果" width="300" height="180" />
 
-1. 添加节点
-<img src="../img/lab2/2.png" alt="添加节点效果" width="720" />
+2. 添加节点
+<img src="../img/lab2/2.png" alt="添加节点效果" width="300" height="180" />
 
-1. 删除节点
-<img src="../img/lab2/3.png" alt="删除节点效果" width="720" />
+3. 删除节点
+<img src="../img/lab2/3.png" alt="删除节点效果" width="300" height="180" />
 
-1. 查找节点（输出根到目标节点路径）
-<img src="../img/lab2/4.png" alt="查找节点效果" width="720" />
+4. 查找节点（输出根到目标节点路径）
+<img src="../img/lab2/4.png" alt="查找节点效果" width="300" height="180" />
