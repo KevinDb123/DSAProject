@@ -25,10 +25,10 @@
 
 ## 三、需要完成的 3 个函数
 
-文件：`RelationTree.cpp`
+文件：`RelationTree.cpp`，直接在TODO后面进行补充即可
 
 ### 1) `AddNode`
-直接在TODO后面进行补充即可
+
 
 要求：
 1. 做参数合法性检查。
@@ -80,13 +80,13 @@ g++ -std=c++11 -Wall -Wextra -finput-charset=UTF-8 -fexec-charset=GBK -o main.ex
 
 
 1. 打印树（已实现，不需要完成）
-<img src="../img/lab2/1.png" alt="打印树效果" style="max-height: 420px; height: auto;" />
+<img src="../img/lab2/1.png" alt="打印树效果" style="max-height: 250px; height: auto;" />
 
 2. 添加节点
-<img src="../img/lab2/2.png" alt="添加节点效果" style="max-height: 420px; height: auto;" />
+<img src="../img/lab2/2.png" alt="添加节点效果" style="max-height: 250px; height: auto;" />
 
 3. 删除节点
-<img src="../img/lab2/3.png" alt="删除节点效果" style="max-height: 420px; height: auto;" />
+<img src="../img/lab2/3.png" alt="删除节点效果" style="max-height: 250px; height: auto;" />
 
 4. 查找节点（输出根到目标节点路径）
-<img src="../img/lab2/4.png" alt="查找节点效果" style="max-height: 420px; height: auto;" />
+<img src="../img/lab2/4.png" alt="查找节点效果" style="max-height: 250px; height: auto;" />
