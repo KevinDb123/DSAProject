@@ -80,13 +80,13 @@ g++ -std=c++11 -Wall -Wextra -finput-charset=UTF-8 -fexec-charset=GBK -o main.ex
 
 
 1. 打印树（已实现，不需要完成）
-<img src="../img/lab2/1.png" alt="打印树效果" style="max-height: 100px; width: auto;" />
+<img src="../img/lab2/1.png" alt="打印树效果" width="200" />
 
 2. 添加节点
-<img src="../img/lab2/2.png" alt="添加节点效果" style="max-height: 100px; width: auto;" />
+<img src="../img/lab2/2.png" alt="添加节点效果" width="200" />
 
 3. 删除节点
-<img src="../img/lab2/3.png" alt="删除节点效果" style="max-height: 100px; width: auto;" />
+<img src="../img/lab2/3.png" alt="删除节点效果" width="200" />
 
 4. 查找节点（输出根到目标节点路径）
-<img src="../img/lab2/4.png" alt="查找节点效果" style="max-height: 100px; width: auto;" />
+<img src="../img/lab2/4.png" alt="查找节点效果" width="200" />
