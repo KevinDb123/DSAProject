@@ -80,10 +80,9 @@ void PrintTree(const RelationTree* tree) {
 
 // 在指定父节点下添加一个新子节点。
 int AddNode(RelationTree* tree, const char* parent_name, const char* name, NodeType type) {
-    TreeNode* parent = NULL;
-    TreeNode* nodes[4096];
-    int count = 0;
-    TreeNode* child;
+    TreeNode* parent = NULL;  // 查找到的父节点指针，未找到时保持 NULL。
+    TreeNode* nodes[4096];  // 遍历整棵树时用的临时节点数组。
+    TreeNode* child;  // 新创建并准备挂接到 parent 下的子节点。
 
     if (tree == NULL || tree->root == NULL || parent_name == NULL || name == NULL) return -1;
 
@@ -103,10 +102,8 @@ int AddNode(RelationTree* tree, const char* parent_name, const char* name, NodeT
 
 // 按名称删除节点（不允许删除根节点）。
 int DeleteNode(RelationTree* tree, const char* name) {
-    TreeNode* target = NULL;
-    TreeNode* nodes[4096];
-    int count = 0;
-    int i;
+    TreeNode* target = NULL;  // 要删除的目标节点指针，未找到时为 NULL。
+    TreeNode* nodes[4096];  // 遍历整棵树时用的临时节点数组。
 
     if (tree == NULL || tree->root == NULL || name == NULL) return 0;
 
@@ -126,12 +123,9 @@ int DeleteNode(RelationTree* tree, const char* name) {
 
 // 输出从根到指定叶子节点的路径。
 int PrintPathToLeaf(RelationTree* tree, const char* name) {
-    TreeNode* target = NULL;
-    TreeNode* nodes[4096];
-    TreeNode* path[256];
-    int count = 0;
-    int len = 0;
-    int i;
+    TreeNode* target = NULL;  // 查找到的目标节点。
+    TreeNode* nodes[4096];  // 查找目标节点时使用的临时遍历数组。
+    TreeNode* path[256];  // 存放“目标到根”路径的临时数组，输出时需要逆序。
 
     if (tree == NULL || tree->root == NULL || name == NULL) return 0;
 
