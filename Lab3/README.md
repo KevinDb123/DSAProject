@@ -64,21 +64,35 @@ gcc -o lab3.exe main.c graph.c algorithms.c
 - 再实现 `Dijkstra`，重点检查路径恢复是否正确
 
 如果你在运行`gcc -o lab3.exe main.c graph.c algorithms.c`的时候遇到了这种问题：
+
 <img src="../img/lab3/1.png" alt="报错1" width="400" />
+
 说明你执行命令的目录错了（例如这里是在Lab3的上一层），那么在终端输入`cd Lab3`即可
+
 <img src="../img/lab3/2.png" alt="正常" width="400" />
+
 编译命令不会有任何信息显示，上述结果是正常结果，然后就得到了lab3.exe,你可以选择直接点开lab3.exe，或者在终端输入`./lab3.exe`来运行,会得到这个结果：
+
 <img src="../img/lab3/3.png" alt="正常" width="400" />
+
 <img src="../img/lab3/4.png" alt="正常" width="200" />
+
 如果一开始输入2或3显示如下图所示，是正常情况：
+
 <img src="../img/lab3/5.png" alt="正常" width="400" />
+
 <img src="../img/lab3/6.png" alt="正常" width="400" />
+
 将TODO补齐就可以看到这样效果：
+
 <img src="../img/lab3/7.png" alt="正常" width="600" />
+
 <img src="../img/lab3/8.png" alt="正常" width="400" />
 
 如果你觉得城市名用中文看更方便一些且你没有中文编码问题，那么在`main.c`中142行找到这行代码：` if (!graph_load_from_files(&graph, "cities.txt", "edges.txt"))`,将`cities.txt`改成`cities_zh.txt`
 
 当然我的电脑是有编码问题的，效果如下：
+
 <img src="../img/lab3/9.png" alt="正常" width="200" />
+
 所以慎重修改

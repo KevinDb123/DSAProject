@@ -12,7 +12,6 @@ int kruskal_mst(const Graph *graph, Edge mst_edges[], int *mst_edge_count, int *
      * Stop after selecting city_count - 1 edges.
      */
 
-    return 0;
 }
 
 int prim_mst(const Graph *graph, Edge mst_edges[], int *mst_edge_count, int *total_weight)
@@ -27,7 +26,6 @@ int prim_mst(const Graph *graph, Edge mst_edges[], int *mst_edge_count, int *tot
      * Stop after selecting city_count - 1 edges.
      */
 
-    return 0;
 }
 
 int dijkstra_shortest_path(
@@ -48,5 +46,4 @@ int dijkstra_shortest_path(
      * Return 0 if the target is unreachable.
      */
 
-    return 0;
 }
