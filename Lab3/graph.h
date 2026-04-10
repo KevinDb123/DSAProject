@@ -28,7 +28,6 @@ typedef struct
      * You may use an adjacency matrix or an adjacency list.
      * Keep in mind that this is an undirected weighted graph.
      */
-    int reserved;
 } Graph;
 
 void graph_init(Graph *graph);

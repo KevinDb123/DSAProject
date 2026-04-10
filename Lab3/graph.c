@@ -8,7 +8,6 @@ void graph_init(Graph *graph)
 
     graph->city_count = 0;
     graph->edge_count = 0;
-    graph->reserved = 0;
 
     for (i = 0; i < MAX_CITIES; ++i)
     {
