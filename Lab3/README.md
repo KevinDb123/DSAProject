@@ -37,7 +37,7 @@
 
 ```bash
 gcc -o lab3.exe main.c graph.c algorithms.c
-lab3.exe
+./lab3.exe
 ```
 
 ## 功能说明
