@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C/C++: gcc.exe 生成活动文件",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "chcp 65001>nul && gcc -fdiagnostics-color=always -g main.c graph.c algorithms.c -o lab3.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "C/C++: gcc build active file",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "chcp 65001>nul && gcc -fdiagnostics-color=always -g main.c graph.c algorithms.c -o lab3.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ]
+}

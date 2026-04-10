@@ -6,7 +6,6 @@
 *.pdb
 
 # IDE/editor files
-.vscode/
 .idea/
 *.user
 

@@ -43,6 +43,9 @@ gcc -o lab3.exe main.c graph.c algorithms.c
 ./lab3.exe
 ```
 
+此外，新增了配置文件.vscode，可以直接在vscode点击小三角进行编译运行,当然左侧要打开Lab3的目录如图所示：
+<img src="../img/lab3/10.png" alt="正常" width="200" />
+
 ## 功能说明
 
 程序启动后会自动读取 `cities.txt` 和 `edges.txt`，并提供以下功能：
