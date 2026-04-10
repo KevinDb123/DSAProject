@@ -95,18 +95,74 @@ int graph_load_from_files(
     const char *index_filename,
     const char *distance_filename)
 {
+    FILE *index_file;
+    FILE *distance_file;
+    char index_to_name[MAX_CITIES][MAX_CITY_NAME];
+    int file_index;
+    char city_name[MAX_CITY_NAME];
+    int from_index;
+    int to_index;
+    int weight;
+    int i;
+
     graph_init(graph);
 
-    /*
-     * TODO:
-     * Load cities from cities.txt and edges from edges.txt.
-     * cities.txt stores: index city_name
-     * edges.txt stores: from_index to_index weight
-     * You may switch to cities_zh.txt if you want Chinese names.
-     * Build an index-to-name mapping first, then add edges.
-     */
+    for (i = 0; i < MAX_CITIES; ++i)
+    {
+        index_to_name[i][0] = '\0';
+    }
 
-    return 0;
+    index_file = fopen(index_filename, "r");
+    if (index_file == NULL)
+    {
+        return 0;
+    }
+
+    while (fscanf(index_file, "%d %63s", &file_index, city_name) == 2)
+    {
+        if (file_index < 0 || file_index >= MAX_CITIES)
+        {
+            fclose(index_file);
+            return 0;
+        }
+
+        strncpy(index_to_name[file_index], city_name, MAX_CITY_NAME - 1);
+        index_to_name[file_index][MAX_CITY_NAME - 1] = '\0';
+
+        if (graph_add_city(graph, city_name) < 0)
+        {
+            fclose(index_file);
+            return 0;
+        }
+    }
+    fclose(index_file);
+
+    distance_file = fopen(distance_filename, "r");
+    if (distance_file == NULL)
+    {
+        return 0;
+    }
+
+    while (fscanf(distance_file, "%d %d %d", &from_index, &to_index, &weight) == 3)
+    {
+        if (from_index < 0 || from_index >= MAX_CITIES ||
+            to_index < 0 || to_index >= MAX_CITIES ||
+            index_to_name[from_index][0] == '\0' ||
+            index_to_name[to_index][0] == '\0')
+        {
+            fclose(distance_file);
+            return 0;
+        }
+
+        if (!graph_add_edge(graph, index_to_name[from_index], index_to_name[to_index], weight))
+        {
+            fclose(distance_file);
+            return 0;
+        }
+    }
+    fclose(distance_file);
+
+    return 1;
 }
 
 void graph_print_cities(const Graph *graph)
