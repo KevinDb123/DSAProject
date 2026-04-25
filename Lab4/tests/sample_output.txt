@@ -1,0 +1,16 @@
+===== Lab4 AVL Tree =====
+Enter integers separated by spaces.
+Example: 10 20 30 40 50 25
+Duplicate values will be ignored.
+Input: 
+AVL tree (sideways display):
+        50
+    40
+30
+        25
+    20
+        10
+
+Preorder: 30 20 10 25 40 50 
+Inorder: 10 20 25 30 40 50 
+Postorder: 10 25 20 50 40 30 

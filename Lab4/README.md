@@ -66,3 +66,31 @@ gcc -o lab4.exe main.c avl.c
 AVL insert is not implemented yet.
 Please complete the TODOs in avl.c and try again.
 ```
+
+## 测试样例
+
+`tests` 目录中提供了一组输入输出样例：
+
+- `sample`：普通综合样例
+- `ll`：LL 旋转
+- `rr`：RR 旋转
+- `lr`：LR 旋转
+- `rl`：RL 旋转
+- `duplicate`：重复元素
+- `invalid`：非法输入
+
+在 Windows 中测试时：
+
+如果你使用的是 `PowerShell`，可以执行：
+
+```powershell
+Get-Content tests\sample_input.txt | .\lab4.exe
+```
+
+如果你使用的是 `cmd`，可以执行：
+
+```bash
+lab4.exe < tests\sample_input.txt
+```
+
+将程序输出与 `tests/sample_output.txt` 对比即可。
