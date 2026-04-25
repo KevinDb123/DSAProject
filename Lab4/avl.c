@@ -58,8 +58,6 @@ static AVLNode *rotate_right(AVLNode *root)
      * TODO:
      * Complete the right rotation.
      */
-
-    return root;
 }
 
 static AVLNode *rotate_left(AVLNode *root)
@@ -68,8 +66,6 @@ static AVLNode *rotate_left(AVLNode *root)
      * TODO:
      * Complete the left rotation.
      */
-
-    return root;
 }
 
 AVLNode *avl_insert(AVLNode *root, int data)
@@ -78,8 +74,6 @@ AVLNode *avl_insert(AVLNode *root, int data)
      * TODO:
      * Complete AVL insertion and rebalancing.
      */
-
-    return root;
 }
 
 void avl_print_sideways(const AVLNode *root, int depth)

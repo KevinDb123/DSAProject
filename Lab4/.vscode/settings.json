@@ -1,0 +1,7 @@
+{
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc -fdiagnostics-color=always -g main.c avl.c -o main.exe && main.exe"
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true
+}

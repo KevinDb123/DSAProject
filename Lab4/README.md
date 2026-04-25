@@ -14,7 +14,7 @@
 - 销毁函数
 - 旋转与插入函数接口
 
-学生需要完成的核心内容包括：
+你需要完成的核心内容包括：
 
 1. `rotate_left`
 2. `rotate_right`
@@ -46,9 +46,14 @@
 
 在终端进入 `Lab4` 目录后执行：
 
+下面是编译命令，如果你修改了代码需要重新生成可执行文件（exe），那么输入这一条进行编译：
 ```bash
-gcc -o lab4.exe main.c avl.c
-./lab4.exe
+gcc -o main.exe main.c avl.c
+```
+
+下面是执行可执行文件命令（可等效为直接双击打开main.exe），如果你没有修改代码，只是想重新运行的话，只需要输入下面这条指令：
+```
+./main.exe
 ```
 
 ## 编程建议
@@ -60,7 +65,7 @@ gcc -o lab4.exe main.c avl.c
 
 ## 运行说明
 
-如果学生还没有补完 `avl.c` 中的 `TODO`，运行程序时会看到提示：
+如果还没有补完 `avl.c` 中的 `TODO`，运行程序时会看到提示：
 
 ```text
 AVL insert is not implemented yet.
@@ -79,18 +84,27 @@ Please complete the TODOs in avl.c and try again.
 - `duplicate`：重复元素
 - `invalid`：非法输入
 
-在 Windows 中测试时：
+可以使用测试程序来进行测试（可能不稳定,如果遇到问题请忽略这条）：
+```powershell
+.\judge.bat
+```
+或
+```
+powershell -ExecutionPolicy Bypass -File .\judge.ps1
+```
 
-如果你使用的是 `PowerShell`，可以执行：
+如果对单个文件进行测试，在 Windows 中测试时：
+
+如果你使用的是 `PowerShell`（如vscode终端），可以执行：
 
 ```powershell
-Get-Content tests\sample_input.txt | .\lab4.exe
+cmd /c "main.exe < tests\sample_input.txt"
 ```
 
 如果你使用的是 `cmd`，可以执行：
 
 ```bash
-lab4.exe < tests\sample_input.txt
+main.exe < tests\sample_input.txt
 ```
 
 将程序输出与 `tests/sample_output.txt` 对比即可。
