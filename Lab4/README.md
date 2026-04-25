@@ -93,6 +93,9 @@ Please complete the TODOs in avl.c and try again.
 powershell -ExecutionPolicy Bypass -File .\judge.ps1
 ```
 
+如果成功你会看到：
+<img src="../img/lab4/image.png" alt="成功" width="400" />
+
 如果对单个文件进行测试，在 Windows 中测试时：
 
 如果你使用的是 `PowerShell`（如vscode终端），可以执行：
